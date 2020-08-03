@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/assets/css/chat.css">
+    <script src="https://kit.fontawesome.com/420fa0209e.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="">
+
+    <div class="screen">
+
+        <div class="blue-alert noselect">
+            <p><i class="fab fa-facebook-messenger"></i></p>
+        </div>
+
+        <div class="main">
+            <!-- TOP -->
+            <div class="main-top">
+                <div class="img noselect">
+                    <img src="" id="pictureTo">
+                </div>
+                <div class="name">
+                    <h2>
+                        <span class="letter-anim" id="nameTo"></span>
+                    </h2>
+                    <p><span class="green-dot fas fa-circle"></span> Active Now</p>
+                </div>
+
+                <div class="icon call">
+                    <i class="fas fa-phone-alt blink"></i>
+                </div>
+                <div class="icon info">
+                    <i class="fas fa-info-circle blink"></i>
+                </div>
+            </div>
+
+            <div class="chatbox" id="chatBox"></div>
+
+            <div class="emoji-block">
+                <p class="emoji">&#128512;</p>
+                <p class="emoji">&#128514;</p>
+                <p class="emoji">&#128515;</p>
+                <p class="emoji">&#128516;</p>
+                <p class="emoji">&#128517;</p>
+                <p class="emoji">&#128518;</p>
+                <p class="emoji">&#128519;</p>
+                <p class="emoji">&#128520;</p>
+                <p class="emoji">&#128521;</p>
+                <p class="emoji">&#128522;</p>
+                <p class="emoji">&#128523;</p>
+                <p class="emoji">&#128524;</p>
+                <p class="emoji">&#128525;</p>
+                <p class="emoji">&#128526;</p>
+                <p class="emoji">&#128527;</p>
+                <p class="emoji">&#128528;</p>
+                <p class="emoji">&#128529;</p>
+                <p class="emoji">&#128530;</p>
+                <p class="emoji">&#128531;</p>
+                <p class="emoji">&#128532;</p>
+                <p class="emoji">&#128533;</p>
+                <p class="emoji">&#128534;</p>
+                <p class="emoji">&#128535;</p>
+                <p class="emoji">&#128536;</p>
+                <p class="emoji">&#128537;</p>
+                <p class="emoji">&#128538;</p>
+                <p class="emoji">&#128539;</p>
+                <p class="emoji">&#128540;</p>
+                <p class="emoji">&#128548;</p>
+                <p class="emoji">&#128541;</p>
+                <p class="emoji">&#128542;</p>
+                <p class="emoji">&#128543;</p>
+                <p class="emoji">&#128544;</p>
+                <p class="emoji">&#128545;</p>
+                <p class="emoji">&#128546;</p>
+                <p class="emoji">&#128547;</p>
+
+            </div>
+            <form action="#" class="message-section" id="formSendMessage">
+                <div class="form-button">
+                    <i class="fas fa-clipboard-list blink"></i>
+                </div>
+                <button id="msg-btn" class="msg" type="button">
+                    <textarea contenteditable="true" class="box-message" aria-placeholder="Type a message..." placeholder="Type a message..." id="inputMessage"></textarea>
+                </button>
+                <div class="emoji-btn">
+                    <span class="fas fa-smile blink"></span>
+                </div>
+                <div class="thumb">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/services/accounts.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/pages/components/draw.js"></script>
+    <script src="/pages/components/socketChat.js"></script>
+</body>
+
+</html>
