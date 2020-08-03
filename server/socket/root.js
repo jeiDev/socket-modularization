@@ -1,4 +1,4 @@
-const chat = require("./chat");
+const Socket = require("./socket");
 
 module.exports = (server) => {
     const io = require('socket.io')(server);
@@ -6,7 +6,7 @@ module.exports = (server) => {
 
     [io, io2].map(io => {
         io.on('connection', socket => {
-            chat({socket, io});
+            Socket({socket, io});
     
             socket.on('disconnect', () => {
                 console.log("Client disconnect");
